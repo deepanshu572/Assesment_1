@@ -26,7 +26,7 @@ const Login = () => {
     const userData = {
       name: displayName,
       email: email,
-      expiry: Date.now() + 3 * 60 * 1000, 
+      expiry: Date.now() + 24 * 60 * 60 * 1000, 
     };
 
     localStorage.setItem("user", JSON.stringify(userData));
@@ -38,7 +38,7 @@ const Login = () => {
     const userData = {
       name: name,
       email: email,
-      expiry: Date.now() + 3 * 60 * 1000, 
+      expiry: Date.now() + 24 * 60 * 60 * 1000, 
     };
 
     localStorage.setItem("user", JSON.stringify(userData));
